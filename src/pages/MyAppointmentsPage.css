@@ -1,0 +1,118 @@
+.appointments-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+}
+
+.appointments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.appointment-card {
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.appointment-date-badge {
+  background: var(--color-primary);
+  color: white;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+  min-width: 100px;
+}
+
+.badge-month {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.badge-day {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.badge-time {
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.appointment-info {
+  flex: 1;
+}
+
+.doctor-info-sm {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.doc-img-sm {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-circle);
+  object-fit: cover;
+}
+
+.doc-name-sm {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.doc-spec-sm {
+  color: var(--color-primary);
+  font-size: 0.875rem;
+}
+
+.patient-details {
+  background: var(--color-background);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+}
+
+.patient-details p {
+  margin-bottom: 0.25rem;
+}
+
+.patient-details p:last-child {
+  margin-bottom: 0;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-circle);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.status-badge.upcoming {
+  background: rgba(13, 148, 136, 0.1);
+  color: var(--color-accent);
+}
+
+.status-badge.completed {
+  background: rgba(100, 116, 139, 0.1);
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 600px) {
+  .appointment-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
